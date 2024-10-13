@@ -1,0 +1,355 @@
+/* Global Styling */
+body {
+  font-family: 'Inter', sans-serif; /* Use Inter font */
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f; /* Dark background */
+  color: #ccd6f6; /* Light text */
+}
+
+.container {
+  display: flex;
+  min-height: 100vh; /* Full height */
+  width: 100vw; /* Full viewport width */
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.left-column {
+  width: 50%; /* Keep at 50% */
+  padding: 2rem;
+  background-color: #112240; /* Slightly lighter background */
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align children to the top */
+  align-items: flex-start; /* Align children to the start */
+  position: sticky; /* Make the left column sticky */
+  top: 0; /* Stick to the top */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.right-column {
+  width: 50%; /* Set to 50% */
+  padding: 2rem;
+  background-color: #0a192f; /* Dark background */
+  height: auto; /* Full height of the viewport */
+  overflow-y: visible; /* Allow vertical scrolling */
+  text-align: right;
+}
+
+
+
+
+/* Adjust the BerkanInformation class */
+.BerkanInformation {
+  width: 80%; /* Limit width of the section */
+  max-width: 600px; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center it */
+  padding: 1rem; /* Add some padding */
+}
+
+.Name {
+  text-align: left;
+  width: 100%;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+  color: whitesmoke;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Align Projects and Experience */
+.right-column .projects, .right-column .experience {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center; /* Align everything centered on mobile */
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+}
+
+.AboutMe {
+  width: 89%;
+  color: #ccd6f6a2;
+}
+
+.AboutMe2 {
+  width: 89%;
+  color: #ccd6f6a2;
+}
+
+.AboutMe3 {
+  width: 89%;
+  color: #ccd6f6a2;
+}
+
+.ExperienceContainer1 {
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+
+.QuickDescription {
+  font-size: 18px;
+  margin-top: -0.7rem; /* Negative margin to pull it up */
+}
+
+.QuickExplanation {
+  color: #ccd6f6a2;
+}
+
+.quick-summary {
+  margin-top: 20vh;
+  margin-bottom: 100px;
+}
+
+.highlight {
+  font-weight: bold; /* Optional: Keep the text bold */
+  color: #dbe1f6;
+
+}
+
+.buttons {
+  margin-top: 5vh;
+  background: none;
+  border: none;
+  color: #ccd6f6a2; /* Button text color */
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* Add padding for spacing */
+  margin-left: 20px; /* Space between the line and the button */
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+}
+
+.buttons::before {
+  content: "";
+  position: absolute;
+  left: -40px; /* Move the line to the left */
+  top: 50%;
+  width: 30px; /* Initial length of the line */
+  height: 1px;
+  background-color: #ccd6f6a2; /* Initial line color */
+  transition: width 0.3s ease, background-color 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.buttons:hover::before {
+  width: 50px; /* Extended length of the line on hover */
+  background-color: #64ffda; /* Color change on hover */
+}
+
+.buttons:hover {
+  color: #64ffda; /* Text color change on hover */
+  transform: translateX(15px); /* Slide text to the right */
+}
+
+.buttons:focus {
+  outline: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.social-icons a {
+  color: #ccd6f6;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #64ffda; /* Color on hover */
+}
+
+.ContactContainer {
+  margin-top: 15rem;
+  text-align: center;
+
+}
+
+.Contact {
+  padding: 2rem 1rem;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+h2 {
+  color: #38bdf8; /* Highlight color for header */
+  margin-bottom: 16px;
+}
+
+.contact-description {
+  color: #b0b3b8; /* Color for the description text */
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactMe {
+  text-align: right;
+}
+
+.input-field,
+.message-field {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2d2f3a; /* Card background */
+  color: #fff; /* Input text color */
+  font-size: 1rem;
+  text-align: right;
+}
+
+.input-field::placeholder,
+.message-field::placeholder {
+  color: #b0b3b8; /* Placeholder color */
+}
+
+.submit-button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #38bdf8; /* Button background */
+  color: #1e293b; /* Button text color */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #2bb2e8; /* Darker shade on hover */
+}
+
+/* Ensure the experience section fits within the container */
+.Experience {
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.experience-content {
+  width: 100%;
+  max-width: 600px; /* Ensure it fits within the layout */
+  padding: 1vh 0px;
+}
+
+.experience-card {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 20px; /* Adjusted padding */
+  margin: 10px 0; /* Adjusted margin */
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.experience-card:hover {
+  transform: scale(1.05);
+
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  color: #38bdf8; /* Highlight color */
+  margin-bottom: 8px;
+}
+
+.experience-details {
+  font-size: 0.9rem;
+  color: #b0b3b8;
+}
+
+.experience-description {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #1e293b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.ExperienceContainer {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.world-clock {
+  display: flex;                  /* Use flexbox for horizontal alignment */
+  justify-content: space-around;  /* Space out the clocks evenly */
+  align-items: center;           /* Center align items vertically */
+  flex-wrap: wrap;               /* Allow wrapping on smaller screens */
+  padding: 2px;                 /* Add some padding around the container */
+}
+
+.clock {
+  display: flex;                 /* Use flexbox for alignment */
+  flex-direction: column;        /* Align icon and text vertically */
+  align-items: center;           /* Center align the contents */
+  margin: 0 10px;               /* Adjust margin for spacing */
+  font-size: 0.56rem;            /* Make text smaller by 4px from the previous size */
+}
+
+.icon {
+  font-size: 1.3rem;             /* Reduce icon size by 4px */
+}
+
+.ExactTime {
+  font-size: 1 rem;
+}
+
+html {
+  scroll-padding-top: 4rem; /* Adjust this value to create the space */
+}

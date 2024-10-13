@@ -1,0 +1,56 @@
+.ProjectsSection {
+    padding: 2rem;
+    background-color: #0a192f;
+    color: #ccd6f6;
+  }
+  
+  .ProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .ProjectCard {
+    background-color: #0a192f;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .ProjectCard:hover {
+    transform: scale(1.025);
+    background-color: #0d203da7;
+  }
+  
+  .ProjectImage {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .ProjectInfo {
+    margin-top: 1rem;
+  }
+  
+  h3 {
+    color: #64ffda;
+    margin-bottom: 0.5rem;
+  }
+  
+  .TechStack {
+    margin-top: 0.5rem;
+  }
+  
+  .TechTag {
+    display: inline-block;
+    background-color: rgba(100, 255, 218, 0.1);
+    color: #64ffda;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ProjectDescription {
+    font-size: 15px;
+  }
+  
