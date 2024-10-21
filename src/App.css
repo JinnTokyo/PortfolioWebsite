@@ -13,6 +13,8 @@ body {
   width: 100vw; /* Full viewport width */
   max-width: 1200px; /* Set a maximum width for the container */
   margin: 0 auto; /* Center the container horizontally */
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .left-column {
@@ -38,9 +40,6 @@ body {
   text-align: right;
 }
 
-
-
-
 /* Adjust the BerkanInformation class */
 .BerkanInformation {
   width: 80%; /* Limit width of the section */
@@ -65,7 +64,8 @@ h1 {
 
 h2 {
   font-size: 2.1rem;
-  color: whitesmoke;
+  color: whitesmoke; /* Highlight color for header */
+  margin-bottom: 16px; /* Bottom margin */
 }
 
 p {
@@ -75,7 +75,8 @@ p {
 }
 
 /* Align Projects and Experience */
-.right-column .projects, .right-column .experience {
+.right-column .projects, 
+.right-column .experience {
   text-align: right;
   margin-bottom: 1rem;
 }
@@ -92,53 +93,44 @@ p {
   }
 }
 
-.AboutMe {
+/* About Me Sections */
+.AboutMe, .AboutMe2, .AboutMe3 {
   width: 89%;
-  color: #ccd6f6a2;
+  color: #ccd6f6a2; /* Color for about me text */
 }
 
-.AboutMe2 {
-  width: 89%;
-  color: #ccd6f6a2;
-}
-
-.AboutMe3 {
-  width: 89%;
-  color: #ccd6f6a2;
-}
-
+/* Experience Padding */
 .ExperienceContainer1 {
-  padding-top: 100px;
-  padding-bottom: 300px;
+  padding: 100px 0 300px; /* Adjust padding */
 }
 
+/* Quick Description */
 .QuickDescription {
   font-size: 18px;
   margin-top: -0.7rem; /* Negative margin to pull it up */
 }
 
 .QuickExplanation {
-  color: #ccd6f6a2;
+  color: #ccd6f6a2; /* Color for quick explanation */
 }
 
 .quick-summary {
-  margin-top: 20vh;
-  margin-bottom: 100px;
+  margin: 20vh 0 100px; /* Top and bottom margin */
 }
 
+/* Highlighting Text */
 .highlight {
   font-weight: bold; /* Optional: Keep the text bold */
-  color: #dbe1f6;
-
+  color: #dbe1f6; /* Highlight color */
 }
 
+/* Buttons */
 .buttons {
   margin-top: 5vh;
   background: none;
   border: none;
   color: #ccd6f6a2; /* Button text color */
   font-size: 1rem;
-  font-family: 'Inter', sans-serif;
   cursor: pointer;
   padding: 0.5rem 1rem; /* Add padding for spacing */
   margin-left: 20px; /* Space between the line and the button */
@@ -172,13 +164,13 @@ p {
   outline: none;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
   gap: 5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 4rem 0; /* Top and bottom margin */
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 3rem; /* Left margin */
 }
 
 .social-icons a {
@@ -191,23 +183,14 @@ p {
   color: #64ffda; /* Color on hover */
 }
 
+/* Contact Section */
 .ContactContainer {
   margin-top: 15rem;
   text-align: center;
-
 }
 
 .Contact {
   padding: 2rem 1rem;
-}
-
-.container {
-  margin: 0 auto;
-}
-
-h2 {
-  color: #38bdf8; /* Highlight color for header */
-  margin-bottom: 16px;
 }
 
 .contact-description {
@@ -226,6 +209,7 @@ h2 {
   text-align: right;
 }
 
+/* Input Fields */
 .input-field,
 .message-field {
   padding: 12px;
@@ -235,7 +219,7 @@ h2 {
   background-color: #2d2f3a; /* Card background */
   color: #fff; /* Input text color */
   font-size: 1rem;
-  text-align: right;
+  text-align: right; /* Right-aligned text */
 }
 
 .input-field::placeholder,
@@ -243,6 +227,7 @@ h2 {
   color: #b0b3b8; /* Placeholder color */
 }
 
+/* Submit Button */
 .submit-button {
   padding: 12px;
   border: none;
@@ -258,15 +243,9 @@ h2 {
   background-color: #2bb2e8; /* Darker shade on hover */
 }
 
-/* Ensure the experience section fits within the container */
+/* Experience Section */
 .Experience {
   padding: 2rem 1rem;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .experience-content {
@@ -286,12 +265,11 @@ h2 {
   text-decoration: none;
   background-color: transparent;
   transition: transform 0.2s ease-in-out;
+  border: solid 5px red;
 }
 
-
 .experience-card:hover {
-  transform: scale(1.05);
-
+  transform: scale(1.05); /* Scale effect on hover */
 }
 
 .experience-title {
@@ -302,7 +280,7 @@ h2 {
 
 .experience-details {
   font-size: 0.9rem;
-  color: #b0b3b8;
+  color: #b0b3b8; /* Text color */
 }
 
 .experience-description {
@@ -310,6 +288,7 @@ h2 {
   margin-bottom: 16px;
 }
 
+/* Tech Stack */
 .tech-stack span {
   display: inline-block;
   background-color: #38bdf8;
@@ -320,36 +299,27 @@ h2 {
   margin-top: 8px;
 }
 
-.ExperienceContainer {
-  width: 100%;
-  height: 100%;
-  text-align: right;
-}
-
+/* World Clock Section */
 .world-clock {
-  display: flex;                  /* Use flexbox for horizontal alignment */
-  justify-content: space-around;  /* Space out the clocks evenly */
-  align-items: center;           /* Center align items vertically */
-  flex-wrap: wrap;               /* Allow wrapping on smaller screens */
-  padding: 2px;                 /* Add some padding around the container */
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-around; /* Space out the clocks evenly */
+  align-items: center; /* Center align items vertically */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 2px; /* Add some padding around the container */
 }
 
 .clock {
-  display: flex;                 /* Use flexbox for alignment */
-  flex-direction: column;        /* Align icon and text vertically */
-  align-items: center;           /* Center align the contents */
-  margin: 0 10px;               /* Adjust margin for spacing */
-  font-size: 0.56rem;            /* Make text smaller by 4px from the previous size */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Align icon and text vertically */
+  align-items: center; /* Center align the contents */
+  margin: 0 10px; /* Adjust margin for spacing */
+  font-size: 0.56rem; /* Smaller font size */
 }
 
 .icon {
-  font-size: 1.3rem;             /* Reduce icon size by 4px */
+  font-size: 1.1rem; /* Reduce icon size */
 }
 
 .ExactTime {
-  font-size: 1 rem;
-}
-
-html {
-  scroll-padding-top: 4rem; /* Adjust this value to create the space */
-}
+  font-size: 0.7rem;
+ } 
