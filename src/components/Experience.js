@@ -9,8 +9,8 @@ const experiencesData = [
     details: "Coursera, Online",
     date: "September 2024",
     description: "Gained expertise in front-end development using HTML, CSS, JavaScript, React, and Git. Built responsive websites and interactive web apps, applied UX principles to create user-centered designs, and collaborated via GitHub for version control and project management.",
-    imageUrl: metaCertificateImage, // Image URL for the certificate
-    liveUrl: "https://www.coursera.org/account/accomplishments/certificate/YOUR_CERTIFICATE_LINK", // Your certificate link
+    imageUrl: metaCertificateImage,
+    liveUrl: "https://www.coursera.org/account/accomplishments/certificate/YOUR_CERTIFICATE_LINK",
     techStack: ["HTML", "CSS", "JavaScript", "React"]
   },
   {
@@ -18,27 +18,27 @@ const experiencesData = [
     details: "Collaborative Team Project",
     date: "Discontinued",
     description: "Worked with a team of 6 to develop an app that offers users a comprehensive guide to Oslo’s attractions. The app featured three ways to explore points of interest: browsing categories, navigating through a map, or searching directly for activities.",
-    imageUrl: osloTouristAppImage, // Image URL for the Oslo Tourist App
-    liveUrl: "https://ahmettu.com", // Project link
+    imageUrl: osloTouristAppImage,
+    liveUrl: "https://ahmettu.com",
     techStack: ["JavaScript", "Google Maps API", "React", "Team Collaboration"]
   },
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="Experience">
+    <section id="experience" className="ExperienceSection">
       <div className="ExperienceContainer1">
         <h2 className="experience">Experience</h2>
-        <div className="experience-content">
+        <div className="ExperienceGrid">
           {experiencesData.map((experience, index) => (
-            <div className="ProjectCard" key={index}>
+            <div className="ExperienceCard" key={index}>
               <a href={experience.liveUrl} target="_blank" rel="noopener noreferrer">
-                <img src={experience.imageUrl} alt={`${experience.title} Screenshot`} className="ProjectImage" />
+                <img src={experience.imageUrl} alt={`${experience.title} Screenshot`} className="ExperienceImage" />
               </a>
-              <div className="ProjectInfo">
+              <div className="ExperienceInfo">
                 <h3 className="experience-title">{experience.title}</h3>
                 <p className="experience-details">{experience.details} <br /> {experience.date}</p>
-                <div className="experience-description">{experience.description}</div>
+                <p className="ExperienceDescription">{experience.description}</p>
                 <div className="TechStack">
                   {experience.techStack.map((tech, i) => (
                     <span key={i} className="TechTag">{tech}</span>
@@ -52,4 +52,3 @@ export default function Experience() {
     </section>
   );
 }
-
