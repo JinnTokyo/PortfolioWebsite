@@ -3,6 +3,7 @@ export default function About() {
     <section id="AboutName" className="About">
       <div className="quick-summary">
         <h2 className="text-4xl font-bold mb-8"></h2>
+        <p className="AboutMe4">About</p>
         <p className="AboutMe">A few projects and a lot of front-end coding later, I stumbled 
           onto a business idea in the most unexpected 
           place—while chatting with <span className="highlight">ChatGPT</span>. 
