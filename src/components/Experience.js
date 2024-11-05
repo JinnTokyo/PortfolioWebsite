@@ -20,7 +20,7 @@ const experiencesData = [
     description: "Worked with a team of 6 to develop an app that offers users a comprehensive guide to Oslo’s attractions. The app featured three ways to explore points of interest: browsing categories, navigating through a map, or searching directly for activities.",
     imageUrl: osloTouristAppImage,
     liveUrl: "https://ahmettu.com/projectoslo",
-    techStack: ["JavaScript", "Google Maps API", "Team Collaboration"]
+    techStack: ["Kotlin", "Google Maps API", "Team Collaboration"]
   },
 ];
 

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dd79869c.css",
-    "main.js": "/static/js/main.01ca6877.js",
+    "main.js": "/static/js/main.576b7fea.js",
     "static/js/453.0bb6e7b6.chunk.js": "/static/js/453.0bb6e7b6.chunk.js",
     "static/media/ahmettuScreenshot.png": "/static/media/ahmettuScreenshot.1c6234441b1f1fcecfe8.png",
     "static/media/osloTouristAppImage.png": "/static/media/osloTouristAppImage.288839575bf8a8d81937.png",
@@ -9,11 +9,11 @@
     "static/media/metaCertificateImage.png": "/static/media/metaCertificateImage.2f1b5b996ea08bfc088a.png",
     "index.html": "/index.html",
     "main.dd79869c.css.map": "/static/css/main.dd79869c.css.map",
-    "main.01ca6877.js.map": "/static/js/main.01ca6877.js.map",
+    "main.576b7fea.js.map": "/static/js/main.576b7fea.js.map",
     "453.0bb6e7b6.chunk.js.map": "/static/js/453.0bb6e7b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd79869c.css",
-    "static/js/main.01ca6877.js"
+    "static/js/main.576b7fea.js"
   ]
 }
