@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css'; // Your styles for the projects section
 import reputeaidevScreenshot from '../assets/Screenshot.png'; // Adjust this path as needed
 import ahmettuScreenshot from '../assets/ahmettuScreenshot.png'; // Import your new project image
+import fremtidenshage from '../assets/fremtidenshage.png';
 
 const projectsData = [
   {
@@ -17,6 +18,13 @@ const projectsData = [
     imageUrl: ahmettuScreenshot, // Use the imported image for your new project
     liveUrl: "https://ahmettu.com", // Change to your project's live URL
     techStack: ["React", "Node.js", "Express", "Html & CSS"], // Change to your project's tech stack
+  },
+  {
+    title: "FremtidensHage", // Replace with your new project's title
+    description: "Contractual work for the frontend part of the website.", // Replace with your new project's description
+    imageUrl: fremtidenshage, // Replace with the path to your new project's image
+    liveUrl: "https://fremtidenshage.no", // Replace with your new project's live URL
+    techStack: ["React", "CSS", "Scrum"], // Replace with your new project's tech stack
   },
   // Add more projects here if needed
 ];
