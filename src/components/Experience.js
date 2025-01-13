@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css'; // Adjust this import as needed
 import metaCertificateImage from '../assets/metaCertificateImage.png'; // Image for the Meta certificate
 import osloTouristAppImage from '../assets/osloTouristAppImage.png'; // Image for the Oslo Tourist App
+import FremtidensHage from '../assets/fremtidenshage.png';
 
 const experiencesData = [
   {
@@ -22,6 +23,15 @@ const experiencesData = [
     liveUrl: "https://ahmettu.com/projectoslo",
     techStack: ["Kotlin", "Google Maps API", "Team Collaboration"]
   },
+  {
+  title: "FremtidensHage", // Replace with your new project's title
+  date: "2024 - 2025", // Add a valid date for your project
+  description: "I designed the UX/UI for Fremtidenshage.no, creating a user-friendly, responsive e-commerce site for pots with grow lights. My work focused on improving navigation, product discovery, and the overall shopping experience.", // Replace with your new project's description
+  imageUrl: FremtidensHage, // Replace with the path to your new project's image
+  liveUrl: "https://fremtidenshage.no", // Replace with your new project's live URL
+  techStack: ["React", "CSS", "Scrum"], 
+  },
+
 ];
 
 export default function Experience() {
